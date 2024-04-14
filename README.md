@@ -66,7 +66,7 @@ import { App, Plugin, WorkspaceLeaf, Debouncer, debounce, TFile, Menu, MarkdownV
 
 <br />
 
-Once you have added some code and are ready to build, go back to your command prompt / terminal and run the following command in your profile folder:
+Once you have added some code and are ready to build, go back to your command prompt / terminal and run the following command in your project folder:
 
 ```shell
 npm run build
