@@ -1,4 +1,3 @@
-<p align="center"><img src="https://github.com/Aetherinox/obsidian-plugin-template/assets/118329232/106bcb32-6c6f-423c-a8c6-c6aee3d31c65" width="860"></p>
 <h1 align="center"><b>Obsidian Plugin Template</b></h1>
 
 <div align="center">
@@ -14,7 +13,7 @@
 <br />
 
 # About
-This is a NodeJS application template which includes the following:
+This is a NodeJS template for creating Obsidian.md plugins which includes the following:
 
 <br />
 
@@ -30,6 +29,7 @@ This is a NodeJS application template which includes the following:
 - rollup-plugin-license
 - semver
 - uuid
+- obsidian
 
 <br />
 
