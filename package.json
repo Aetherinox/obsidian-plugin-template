@@ -1,0 +1,48 @@
+{
+  "name": "noxnode",
+  "version": "1.0.0",
+  "description": "Nox NodeJS template",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aetherinox/noxnode.git"
+  },
+  "scripts": {
+    "start": "rollup --watch --config rollup.config.mjs --environment BUILD,TEST",
+    "dev": "rollup --watch --config rollup.config.mjs --environment BUILD:dev",
+    "build": "rollup --config rollup.config.mjs --environment BUILD:production",
+    "release": "rollup --config rollup.config.mjs --environment BUILD,MINIFY,TEST",
+    "test": "rollup --config rollup.config.mjs --environment TEST",
+    "index": "npx --quiet env-cmd --no-override node index.js",
+    "uuid": "npx --quiet env-cmd --no-override node index.js uuid",
+    "guid": "npx --quiet env-cmd --no-override node index.js guid",
+    "version": "node -p require('./package.json').version;"
+  },
+  "keywords": [
+    "aetherinox"
+  ],
+  "author": "Aetherinox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aetherinox/noxnode/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.14.2",
+    "rollup-plugin-license": "^3.3.1",
+    "@types/node": "^20.12.7",
+    "@types/semver": "^7.5.8",
+    "@types/uuid": "^9.0.8",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "semver": "^7.6.0",
+    "uuid": "^9.0.1"
+  }
+}
